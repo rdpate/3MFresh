@@ -8,21 +8,16 @@ This metadata can **persist even after modifying the file**, leading to confusio
 - A `.3MF` file may contain **optimized print settings for a specific filament**, but also **metadata** about the original model.
 - If you **repurpose the print profile** by adding your own models, the **original metadata remains**—meaning the printer history and slicer still display **the old model's information**, rather than your custom project.
 
-### **What 3MFresh Does**
+## 🚀 Features
 - **Removes unnecessary `<metadata>` entries**, such as the original model name, creator, description, and images.
-- **Keeps only essential metadata**:
+- **Keeps essential metadata**:
   - `<metadata name="Application">` *(e.g., "BambuStudio-01.10.02.76")*
   - `<metadata name="BambuStudio:3mfVersion">` *(e.g., version number)*
 - **Deletes the `Auxiliaries` directory** (if present), which may contain thumbnails or extra data about the original project.
 - **Preserves the `.3MF` file’s internal structure**, ensuring full compatibility with **Bambu Studio** and **Bambu Lab printers**.
-
-By using **3MFresh**, you can **repurpose high-quality print profiles** without unwanted metadata, ensuring that your printer history and slicer interface accurately reflect **your custom models** rather than the original MakerWorld entry.
-
-## 🚀 Features
-- **Removes unnecessary `<metadata>` elements** while keeping essential ones.
-- **Deletes the `Auxiliaries` directory** if present.
-- **Preserves the `.3MF` file’s original structure.**
 - **Processes files in bulk** using an `input` directory.
+
+By using **3MFresh**, you can **repurpose high-quality print profiles** without unwanted metadata, ensuring that your printer history and slicer interface accurately reflect **your custom models** rather than that of the original source.
 
 ## 📥 Installation
 1. **Clone the repository**
@@ -43,7 +38,7 @@ By using **3MFresh**, you can **repurpose high-quality print profiles** without 
 ## 🛠 Usage
 1. Place `.3MF` files into the **`input`** directory.
 2. Run the script (e.g., using Terminal on a Mac or the command prompt in Windows):
-   ```
+   ```bash
    python process_3mf.py
    ```
 3. Cleaned files will be in a timestamped subdirectory in the **`processed`** directory, and original files will be moved to a subdirectory in **`originals`**. This ensures files aren't accidentally overwritten.
