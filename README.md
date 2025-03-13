@@ -1,5 +1,5 @@
 # 3MFresh 🧼✨  
-*A lightweight Python script to clean `.3MF` files by removing unnecessary metadata and the `Auxiliaries` directory. This is designed primarily for Bambu Studio users but may be useful for other purposes.*
+*A lightweight Python script to clean `.3MF` files by removing unnecessary metadata and other data. This is designed primarily for Bambu Studio users but may be useful for other purposes.*
 
 ## 🔍 Why Use 3MFresh?
 When downloading `.3MF` print profiles from **MakerWorld** or other sources, they often contain **metadata** that ties them to their original creator, model description, images, and other details.  
