@@ -37,10 +37,7 @@ By using **3MFresh**, you can **repurpose high-quality print profiles** without 
    python --version
    ```
 
-3. **Install required dependencies (if any, but none should be needed).**  
-   ```bash
-   pip install -r requirements.txt  # (Not needed currently, but if dependencies are added later)
-   ```
+3. You're ready to go! No additional dependencies are required.
 
 ## 🛠 Usage
 1. Place `.3MF` files into the **`input`** directory.
