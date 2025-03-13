@@ -9,12 +9,9 @@ This metadata can **persist even after modifying the file**, leading to confusio
 - If you **repurpose the print profile** by adding your own models, the **original metadata remains**—meaning the printer history and slicer still display **the old model's information**, rather than your custom project.
 
 ## 🚀 Features
-- **Removes unnecessary `<metadata>` entries**, such as the original model name, creator, description, and images.
-- **Keeps essential metadata**:
-  - `<metadata name="Application">` *(e.g., "BambuStudio-01.10.02.76")*
-  - `<metadata name="BambuStudio:3mfVersion">` *(e.g., version number)*
-- **Deletes the `Auxiliaries` directory** (if present), which may contain thumbnails or extra data about the original project.
-- **Preserves the `.3MF` file’s internal structure**, ensuring full compatibility with **Bambu Studio** and **Bambu Lab printers**.
+- **Preserves essential metadata** (`Application` and `BambuStudio:3mfVersion`) but **removes all other metadata**, such as the original model name, creator, and description.
+- **Deletes the `Auxiliaries` directory** (if present), which contain images and/or other unneeded data from the original project.
+- **Preserves the `.3MF` file’s internal structure**, ensuring full compatibility with **Bambu Studio** and **Bambu Lab printers** (and likely anything else that uses the `.3MF` format).
 - **Processes files in bulk** using an `input` directory.
 
 By using **3MFresh**, you can **repurpose high-quality print profiles** without unwanted metadata, ensuring that your printer history and slicer interface accurately reflect **your custom models** rather than that of the original source.
@@ -44,10 +41,10 @@ By using **3MFresh**, you can **repurpose high-quality print profiles** without 
 3. Cleaned files will be in a timestamped subdirectory in the **`processed`** directory, and original files will be moved to a subdirectory in **`originals`**. This ensures files aren't accidentally overwritten.
 
 ## 📌 Notes
-- The script **preserves essential metadata** (`Application` and `BambuStudio:3mfVersion`) but **removes all other metadata**.
-- The **`Auxiliaries` directory is deleted** if found inside the `.3MF` archive.
-- The script has been tested successfully with numerous 3MF files, but it comes with **no guarantees**, **no support**, and **you use it at your own risk**. Always make backups.
+- Always make backups.
+- The script has been tested successfully with numerous 3MF files, but it comes with **no guarantees**, **no support**, and **you use it at your own risk**.
 - If you encounter problems, open a detailed issue report.
+- Always make backups.
 
 ## 🤝 Contributing
 Pull requests are welcome! If you’d like to contribute, please **fork** the repository and submit a PR.
