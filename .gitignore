@@ -1,0 +1,16 @@
+# Ignore everything inside input, processed, and originals, but keep the folders
+input/*
+processed/*
+originals/*
+
+# Allow these directories themselves to be tracked (Git ignores empty folders)
+!input/.gitkeep
+!processed/.gitkeep
+!originals/.gitkeep
+
+# Ignore system files and other unwanted data
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
