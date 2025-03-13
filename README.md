@@ -42,9 +42,8 @@ By using **3MFresh**, you can **repurpose high-quality print profiles** without 
 
 ## 🛠 Usage
 1. Place `.3MF` files into the **`input`** directory.
-2. Run the script:
-   ```bash
-   python process_3mf.py
+2. Run the script (e.g., using Terminal on a Mac or the command prompt in Windows):
+   ```python process_3mf.py
    ```
 3. Cleaned files will be in a timestamped subdirectory in the **`processed`** directory, and original files will be moved to a subdirectory in **`originals`**. This ensures files aren't accidentally overwritten.
 
