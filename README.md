@@ -51,6 +51,8 @@ By using **3MFresh**, you can **repurpose high-quality print profiles** without 
 ## 📌 Notes
 - The script **preserves essential metadata** (`Application` and `BambuStudio:3mfVersion`) but **removes all other metadata**.
 - The **`Auxiliaries` directory is deleted** if found inside the `.3MF` archive.
+- The script has been tested successfully with numerous 3MF files, but it comes with **no guarantees**, **no support**, and **you use it at your own risk**. Always make backups.
+- If you encounter problems, open a detailed issue report.
 
 ## 🤝 Contributing
 Pull requests are welcome! If you’d like to contribute, please **fork** the repository and submit a PR.
